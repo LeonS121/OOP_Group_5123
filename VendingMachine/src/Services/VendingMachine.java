@@ -5,7 +5,13 @@ import java.util.List;
 import Domen.Product;
 
 public class VendingMachine {
+    /**
+     *
+     */
     private Holder holder;
+    /**
+     *
+     */
     private CoinDispenser dispenser;
     private List<Product> productList;
 

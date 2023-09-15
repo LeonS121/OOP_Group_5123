@@ -7,8 +7,8 @@ import java.util.List;
 import Domen.StudentGroup;
 
 /*
- * представляет поток студентов и содержит поле`streamNumber` - номер потока, 
- * и список `groups` - список учебных групп,представленных объектами класса `StudentGroup`.
+ * представляет поток студентов и содержит  номер потока, 
+ * и  список учебных групп,представленных объектами класса `StudentGroup`.
  * 
  */
 
@@ -79,12 +79,9 @@ class StudentSteam implements Iterable<StudentGroup> {
  * и `numberOfStudents` - количество студентов в группе.
  */
 
-public class StudentGroup implements Comparable<Student> {
-
-
+public class StudentGroup implements Comparable<StudentGroup> {
 
     private String name;
-
     private int numberOfStudents;
 
 
@@ -97,7 +94,6 @@ public class StudentGroup implements Comparable<Student> {
     public StudentGroup(String name, int numberOfStudents) {
 
         this.name = name;
-
         this.numberOfStudents = numberOfStudents;
 
     }
